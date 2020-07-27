@@ -1,0 +1,11 @@
+body {
+    font-family: $default-font;
+    font-display: swap;
+}
+
+.container {
+    max-width: calc(#{$content-width} + 20px);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
