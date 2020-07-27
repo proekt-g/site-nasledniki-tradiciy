@@ -14,3 +14,16 @@ main {
     margin: 0 auto;
     padding: 0 10px;
 }
+
+.title {
+    color: #052344;
+    font-size: 36px;
+    font-weight: 700;
+    padding-left: 50px;
+    position: relative;
+    &::after {
+        content: url(../images/organizers-romb.svg);
+        position: absolute;
+        left: 0;
+    }
+}

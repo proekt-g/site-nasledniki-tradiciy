@@ -1,0 +1,235 @@
+.experts {
+    .filter {
+        padding-top: 75px;
+        &-block {
+            margin: 57px 0 0;
+            display: flex;
+            justify-content: space-between;
+            max-width: 1060px;
+            &__item {
+                flex: 0 1 250px;
+                background-color: #39a2a7;
+                border: 2px solid #39a2a7;
+                display: inline-block;
+                height: 50px;
+                line-height: 46px;
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 600;
+                border-radius: 10px;
+                padding-left: 25px;
+                transition: .3s;
+                cursor: pointer;
+                &_active,
+                &:hover {
+                    background-color: #ffffff;
+                    color: #39a2a7;
+                }
+            }
+        }
+    }
+    .organizers {
+        padding: 102px 0 0;
+        &__title {
+            color: #000000;
+            font-size: 28px;
+            font-weight: 700;
+            padding-left: 0;
+            margin: 0 0 55px;
+            &::after {
+                display: none;
+            }
+        }
+        &-block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1046px;
+            margin: -50px 0;
+            &__box {
+                padding: 50px 0;
+                &:last-child {
+                    flex-grow: 1;
+                    margin-left: 85px;
+                }
+            }
+            &__img {
+                max-width: 105px;
+                img {
+                    max-width: 100%;
+                }
+            }
+            &__name {
+                color: #000000;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 22px 0 11px;
+            }
+            &__role {
+                color: #e4bd89;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            &__text {
+                margin-top: 11px;
+                max-width: 270px;
+                color: #052344;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+    .jury {
+        padding: 117px 0 0;
+        &__title {
+            color: #000000;
+            font-size: 28px;
+            font-weight: 700;
+            padding-left: 0;
+            margin: 0 0 55px;
+            &::after {
+                display: none;
+            }
+        }
+        &-block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1046px;
+            margin: -50px 0;
+            &__box {
+                padding: 50px 0;
+                &:last-child {
+                    flex-grow: 1;
+                    margin-left: 85px;
+                }
+            }
+            &__img {
+                max-width: 105px;
+                img {
+                    max-width: 100%;
+                }
+            }
+            &__name {
+                color: #000000;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 22px 0 11px;
+            }
+            &__role {
+                color: #e4bd89;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            &__text {
+                margin-top: 11px;
+                max-width: 270px;
+                color: #052344;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+    .leading {
+        padding: 117px 0 0;
+        &__title {
+            color: #000000;
+            font-size: 28px;
+            font-weight: 700;
+            padding-left: 0;
+            margin: 0 0 55px;
+            &::after {
+                display: none;
+            }
+        }
+        &-block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1046px;
+            margin: -50px 0;
+            &__box {
+                padding: 50px 0;
+                &:last-child {
+                    flex-grow: 1;
+                    margin-left: 85px;
+                }
+            }
+            &__img {
+                max-width: 105px;
+                img {
+                    max-width: 100%;
+                }
+            }
+            &__name {
+                color: #000000;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 22px 0 11px;
+            }
+            &__role {
+                color: #e4bd89;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            &__text {
+                margin-top: 11px;
+                max-width: 270px;
+                color: #052344;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+    .speaker {
+        padding: 117px 0 250px;
+        &__title {
+            color: #000000;
+            font-size: 28px;
+            font-weight: 700;
+            padding-left: 0;
+            margin: 0 0 55px;
+            &::after {
+                display: none;
+            }
+        }
+        &-block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1046px;
+            margin: -50px 0;
+            &__box {
+                padding: 50px 0;
+                &:last-child {
+                    flex-grow: 1;
+                    margin-left: 85px;
+                }
+            }
+            &__img {
+                max-width: 105px;
+                img {
+                    max-width: 100%;
+                }
+            }
+            &__name {
+                color: #000000;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 22px 0 11px;
+            }
+            &__role {
+                color: #e4bd89;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            &__text {
+                margin-top: 11px;
+                max-width: 270px;
+                color: #052344;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}
