@@ -1,0 +1,21 @@
+.footer {
+    padding: 80px 0 200px;
+    margin-left: 299px;
+    text-align: center;
+    border-top: 2px solid #b10302;
+    background-image: url(../images/bottom-bg.svg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    &__email {
+        color: #052344;
+        font-size: 28px;
+        font-weight: 700;
+        position: relative;
+        &::after {
+            content: url(../images/footer-main.svg);
+            position: absolute;
+            left: -156px;
+            top: -36px;
+        }
+    }
+}

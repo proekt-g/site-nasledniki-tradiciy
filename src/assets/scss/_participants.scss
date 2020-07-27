@@ -1,0 +1,130 @@
+.part-filter {
+    padding-top: 77px;
+    &__title {
+        color: #052344;
+        font-size: 36px;
+        font-weight: 700;
+        padding-left: 50px;
+        position: relative;
+        &::after {
+            content: url(../images/organizers-romb.svg);
+            position: absolute;
+            left: 0;
+        }
+    }
+    &-content {
+        margin: 55px 0 0;
+        max-width: 1200px;
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px -10px;
+        }
+        &__input {
+            position: relative;
+            display: inline-block;
+            input {
+                border: 2px solid #39a2a7;
+                height: 46px;
+                display: inline-block;
+                line-height: 46px;
+                border-radius: 10px;
+                padding: 0 55px 0 25px;
+                color: #39a2a7;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 10px 10px;
+                max-width: 250px;
+                &::placeholder {
+                    color: #39a2a7;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+        &__search {
+            position: absolute;
+            top: 50%;
+            right: 28px;
+            cursor: pointer;
+            transform: translate(0px, -50%);
+        }
+        &__item {
+            background-color: #39a2a7;
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            flex: 0 1 250px;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+        &__main {
+            position: relative;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 0 0 0 25px;
+            font-weight: 600;
+            &::after {
+                content: url(../images/arrow-down.png);
+                position: absolute;
+                transition: .3s;
+                right: 14px;
+            }
+            &.active {
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &__submain {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            display: none;
+            background-color: #39a2a7;
+            position: relative;
+            z-index: 2;
+            border-radius: 10px;
+            padding: 0 0 0 25px;
+            cursor: pointer;
+            &:hover {
+                color: #b10302;
+            }
+        }
+        &__btn {
+            background-color: #e4bd89;
+            border-radius: 10px;
+            border-radius: 10px;
+            margin: 10px 10px;
+            flex: 0 1 250px;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            transition: .3s;
+            &:hover {
+                color: #b10302;
+            }
+        }
+    }
+}
+
+.part-result {
+    padding: 89px 0 240px;
+    &__item {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 600;
+        position: relative;
+        padding-left: 40px;
+        margin-top: 26px;
+        &::after {
+            content: url(../images/romb.svg);
+            position: absolute;
+            left: 0;
+        }
+        &:first-child {
+            margin-top: 0px;
+        }
+    }
+}

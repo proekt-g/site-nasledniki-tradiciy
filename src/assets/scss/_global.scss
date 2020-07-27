@@ -1,6 +1,11 @@
 body {
-    font-family: $default-font;
+    font-family: $def-font;
     font-display: swap;
+}
+
+main {
+    padding-left: 299px;
+    min-height: calc(100vh - 310px);
 }
 
 .container {
