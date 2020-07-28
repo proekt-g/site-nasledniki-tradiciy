@@ -1,3 +1,20 @@
 $def-font: 'Open Sans',
 sans-serif;
 $content-width: 1402px;
+@-webkit-keyframes menu {
+    from {
+        left: 100vw;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes menu {
+    from {
+        left: 100vw;
+    }
+    to {
+        left: 0;
+    }
+}

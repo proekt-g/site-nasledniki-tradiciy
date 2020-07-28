@@ -6,12 +6,19 @@
     background-image: url(../images/bg-main.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    @media(max-width: 500px) {
+        background-image: url(../images/bg-main-mobile.jpg);
+    }
     &__title {
         color: #ffffff;
         font-size: 36px;
         font-weight: 700;
         max-width: 911px;
         line-height: 48px;
+        @media(max-width: 414px) {
+            font-size: 26px;
+            line-height: 36px;
+        }
     }
     &__btn {
         padding: 0 40px;
@@ -33,6 +40,9 @@
 
 .info {
     padding: 100px 0;
+    @media(max-width: 768px) {
+        padding: 50px 0;
+    }
     &__text {
         color: #000000;
         font-size: 16px;
@@ -40,6 +50,9 @@
         margin-top: 25px;
         max-width: 1226px;
         line-height: 21px;
+        @media(max-width: 500px) {
+            margin-top: 20px;
+        }
         &:first-child {
             margin-top: 0;
         }
@@ -50,6 +63,14 @@
     position: relative;
     & iframe {
         border-radius: 10px;
+        z-index: -1;
+        position: relative;
+        width: 100%;
+        max-width: 1242px;
+        height: 558px;
+        @media(max-width: 500px) {
+            height: 200px;
+        }
     }
     &__play {
         position: absolute;
@@ -61,12 +82,19 @@
 
 .organizers {
     padding: 150px 0 250px;
+    @media(max-width: 768px) {
+        padding: 75px 0 100px;
+    }
     &__title {
         color: #000000;
         font-size: 36px;
         font-weight: 700;
         padding-left: 50px;
         position: relative;
+        z-index: -1;
+        @media(max-width: 500px) {
+            font-size: 26px;
+        }
         &::after {
             content: url(../images/organizers-romb.svg);
             position: absolute;
@@ -78,5 +106,13 @@
         justify-content: space-between;
         padding-top: 80px;
         max-width: 1338px;
+        flex-wrap: wrap;
+        margin: -25px 0;
+        @media(max-width: 1280px) {
+            justify-content: space-around;
+        }
+        &__box {
+            margin: 25px 10px;
+        }
     }
 }

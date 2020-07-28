@@ -6,16 +6,37 @@
     background-image: url(../images/bottom-bg.svg);
     background-repeat: repeat-x;
     background-position: bottom;
+    @media(max-width: 1080px) {
+        margin-left: 0;
+    }
+    @media(max-width: 768px) {
+        padding: 130px 0 140px;
+    }
+    @media(max-width: 500px) {
+        padding: 200px 0;
+    }
     &__email {
         color: #052344;
         font-size: 28px;
         font-weight: 700;
         position: relative;
+        z-index: -1;
+        @media(max-width: 500px) {
+            font-size: 20px;
+        }
         &::after {
             content: url(../images/footer-main.svg);
             position: absolute;
             left: -156px;
             top: -36px;
+            @media(max-width: 768px) {
+                left: 50%;
+                transform: translate(-50%, 0);
+                top: -120px;
+            }
+            @media(max-width: 500px) {
+                content: url(../images/footer-main-mobail.png);
+            }
         }
     }
 }

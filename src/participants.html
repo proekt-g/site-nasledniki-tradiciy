@@ -15,8 +15,8 @@
             <div class="header__title title">Наследники традиций</div>
             <p class="header__subtitle">Всероссийский детский фестиваль народной культуры</p>
             <nav class="header-menu">
-                <a href="#" class="header-menu__item header-menu__item_active">О проекте</a>
-                <a href="#" class="header-menu__item">Участники</a>
+                <a href="#" class="header-menu__item">О проекте</a>
+                <a href="#" class="header-menu__item header-menu__item_active">Участники</a>
                 <a href="#" class="header-menu__item">Программа</a>
                 <a href="#" class="header-menu__item">Выставка</a>
                 <a href="#" class="header-menu__item">Эксперты</a>
@@ -34,46 +34,57 @@
                 <div class="container">
                     <div class="part-filter__title">Участники</div>
                     <div class="part-filter-content">
-                        <form>
+                        <form action="" method="get">
                             <div class="part-filter-content__input">
                                 <input type="text" placeholder="Найти…">
                                 <div class="part-filter-content__search"><img src="assets/images/search.svg" alt=""></div>
                             </div>
                             <div class="part-filter-content__item">
                                 <div class="part-filter-content__main">Название</div>
-                                <div class="part-filter-content__submain">Название 2</div>
-                                <!-- <div class="part-filter-content__submain">Название</div>
-                                <div class="part-filter-content__submain">Название</div> -->
+                                <ul class="part-filter-content__submain">
+                                    <li>Название 2</li>
+                                    <li>Название 3</li>
+                                </ul>
+                                <input type="text" name="name" value="Название" readonly>
                             </div>
                             <div class="part-filter-content__item">
                                 <div class="part-filter-content__main">Фамилия</div>
-                                <div class="part-filter-content__submain">Фамилия 2</div>
-                                <!-- <div class="part-filter-content__submain">Фамилия</div>
-                                <div class="part-filter-content__submain">Фамилия</div> -->
+                                <ul class="part-filter-content__submain">
+                                    <li>Название 2</li>
+                                    <li>Название 3</li>
+                                </ul>
+                                <input type="text" name="surname" value="Фамилия" readonly>
                             </div>
                             <div class="part-filter-content__item">
                                 <div class="part-filter-content__main">Регион</div>
-                                <div class="part-filter-content__submain">Регион 2</div>
-                                <!-- <div class="part-filter-content__submain">Регион</div>
-                                <div class="part-filter-content__submain">Регион</div> -->
+                                <ul class="part-filter-content__submain">
+                                    <li>Название 2</li>
+                                    <li>Название 3</li>
+                                </ul>
+                                <input type="text" name="region" value="Регион" readonly>
                             </div>
                             <div class="part-filter-content__item">
                                 <div class="part-filter-content__main">Номинация</div>
-                                <div class="part-filter-content__submain">Номинация 2</div>
-                                <!-- <div class="part-filter-content__submain">Номинация</div>
-                                <div class="part-filter-content__submain">Номинация</div> -->
+                                <ul class="part-filter-content__submain">
+                                    <li>Название 2</li>
+                                    <li>Название 3</li>
+                                </ul>
                             </div>
                             <div class="part-filter-content__item">
                                 <div class="part-filter-content__main">Подноминация</div>
-                                <div class="part-filter-content__submain">Подноминация 2</div>
-                                <!-- <div class="part-filter-content__submain">Подноминация</div>
-                                <div class="part-filter-content__submain">Подноминация</div> -->
+                                <ul class="part-filter-content__submain">
+                                    <li>Название 2</li>
+                                    <li>Название 3</li>
+                                </ul>
+                                <input type="text" name="nomination" value="Подноминация" readonly>
                             </div>
                             <div class="part-filter-content__item">
                                 <div class="part-filter-content__main">Возрастная группа</div>
-                                <div class="part-filter-content__submain">Возрастная</div>
-                                <!-- <div class="part-filter-content__submain">Возрастная группа</div>
-                                <div class="part-filter-content__submain">Возрастная группа</div> -->
+                                <ul class="part-filter-content__submain">
+                                    <li>Название 2</li>
+                                    <li>Название 3</li>
+                                </ul>
+                                <input type="text" name="year" value="Возрастная группа" readonly>
                             </div>
                             <button type="submit" class="part-filter-content__btn">Применить</button>
                         </form>
@@ -82,21 +93,21 @@
             </section>
             <section class="part-result">
                 <div class="container">
-                    <ul class="part-result-inner">
-                        <li class="part-result__item">Азбукин Василий Расторгуев</li>
-                        <li class="part-result__item">Буквоедов Василий Расторгуев</li>
-                        <li class="part-result__item">Васильков Василий Расторгуев</li>
-                        <li class="part-result__item">Горшков Василий Расторгуев</li>
-                        <li class="part-result__item">Даниленко Василий Расторгуев</li>
-                        <li class="part-result__item">Ежиков Василий Расторгуев</li>
-                        <li class="part-result__item">Зорькин Василий Расторгуев</li>
-                        <li class="part-result__item">Иванушкин Василий Расторгуев</li>
-                        <li class="part-result__item">Коровин Василий Расторгуев</li>
-                        <li class="part-result__item">Локтев Василий Расторгуев, коллектив “Весёлые одуванчики”.</li>
-                        <li class="part-result__item">Малышев Василий Расторгуев</li>
-                        <li class="part-result__item">Нестеров Василий Расторгуев</li>
-                        <li class="part-result__item">Одров Василий Расторгуев</li>
-                    </ul>
+                    <div class="part-result-inner">
+                        <a class="part-result__item" href="#">Азбукин Василий Расторгуев</a>
+                        <a class="part-result__item" href="#">Буквоедов Василий Расторгуев</a>
+                        <a class="part-result__item" href="#">Васильков Василий Расторгуев</a>
+                        <a class="part-result__item" href="#">Горшков Василий Расторгуев</a>
+                        <a class="part-result__item" href="#">Даниленко Василий Расторгуев</a>
+                        <a class="part-result__item" href="#">Ежиков Василий Расторгуев</a>
+                        <a class="part-result__item" href="#">Зорькин Василий Расторгуев</a>
+                        <a class="part-result__item" href="#">Иванушкин Василий Расторгуев</a>
+                        <a class="part-result__item" href="#">Коровин Василий Расторгуев</a>
+                        <a class="part-result__item" href="#">Локтев Василий Расторгуев, коллектив “Весёлые одуванчики”.</li>
+                        <a class="part-result__item" href="#">Малышев Василий Расторгуев</a>
+                        <a class="part-result__item" href="#">Нестеров Василий Расторгуев</a>
+                        <a class="part-result__item" href="#">Одров Василий Расторгуев</a>
+                    </div>
                 </div>
             </section>
         </article>

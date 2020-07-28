@@ -6,6 +6,9 @@ body {
 main {
     padding-left: 299px;
     min-height: calc(100vh - 310px);
+    @media(max-width: 1080px) {
+        padding-left: 0;
+    }
 }
 
 .container {
@@ -13,6 +16,9 @@ main {
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
+    @media(max-width: 500px) {
+        padding: 0 20px;
+    }
 }
 
 .title {

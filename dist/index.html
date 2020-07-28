@@ -12,18 +12,28 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <div class="header__title">Наследники традиций</div>
-            <p class="header__subtitle">Всероссийский детский фестиваль народной культуры</p>
+            <div class="header-inner">
+                <div class="header__title">Наследники традиций</div>
+                <p class="header__subtitle">Всероссийский детский фестиваль народной культуры</p>
+            </div>
             <nav class="header-menu">
-                <a href="#" class="header-menu__item header-menu__item_active">О проекте</a>
-                <a href="#" class="header-menu__item">Участники</a>
-                <a href="#" class="header-menu__item">Программа</a>
-                <a href="#" class="header-menu__item">Выставка</a>
-                <a href="#" class="header-menu__item">Эксперты</a>
-                <a href="#" class="header-menu__item">Трансляции</a>
-                <a href="#" class="header-menu__item">Новости</a>
-                <a href="#" class="header-menu__item">Итоги</a>
-                <a href="#" class="header-menu__item">Организаторы</a>
+                <div class="header-menu__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-menu__desktop">
+                    <a href="#" class="header-menu__item header-menu__item_active">О проекте</a>
+                    <a href="#" class="header-menu__item">Участники</a>
+                    <a href="#" class="header-menu__item">Программа</a>
+                    <a href="#" class="header-menu__item">Выставка</a>
+                    <a href="#" class="header-menu__item">Эксперты</a>
+                    <a href="#" class="header-menu__item">Трансляции</a>
+                    <a href="#" class="header-menu__item">Новости</a>
+                    <a href="#" class="header-menu__item">Итоги</a>
+                    <a href="#" class="header-menu__item">Организаторы</a>
+                </div>
             </nav>
             <a href="#" class="header__log">Войти в кабинет</a>
         </div>
@@ -52,20 +62,43 @@
             </section>
             <section class="video">
                 <div class="container">
-                    <iframe width="1242" height="558" src="https://www.youtube.com/embed/YAdIiPaf3_0?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <!-- <div class="video__play"><img src="assets/images/play.svg" alt=""></div> -->
+                    <iframe src="https://www.youtube.com/embed/YAdIiPaf3_0?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
             <section class="organizers">
                 <div class="container">
                     <div class="organizers__title">Организаторы</div>
                     <div class="organizers-content">
-                        <div class="organizers-content__box"><img src="assets/images/organizers-1.svg" alt=""></div>
-                        <div class="organizers-content__box"><img src="assets/images/organizers-2.svg" alt=""></div>
-                        <div class="organizers-content__box"><img src="assets/images/organizers-3.svg" alt=""></div>
-                        <div class="organizers-content__box"><img src="assets/images/organizers-4.svg" alt=""></div>
-                        <div class="organizers-content__box"><img src="assets/images/organizers-5.svg" alt=""></div>
-                        <div class="organizers-content__box"><img src="assets/images/organizers-6.svg" alt=""></div>
+                        <div class="organizers-content__box">
+                            <picture>
+                                <source srcset="assets/images/organizers-1-mobail.svg" media="(max-width: 500px)">
+                                <img src="assets/images/organizers-1.svg" alt=""></div>
+                        </picture>
+                        <div class="organizers-content__box">
+                            <picture>
+                                <source srcset="assets/images/organizers-2-mobail.png" media="(max-width: 500px)">
+                                <img src="assets/images/organizers-2.png" alt=""></picture>
+                        </div>
+                        <div class="organizers-content__box">
+                            <picture>
+                                <source srcset="assets/images/organizers-3-mobail.svg" media="(max-width: 500px)">
+                                <img src="assets/images/organizers-3.svg" alt=""></picture>
+                        </div>
+                        <div class="organizers-content__box">
+                            <picture>
+                                <source srcset="assets/images/organizers-4-mobail.svg" media="(max-width: 500px)">
+                                <img src="assets/images/organizers-4.svg" alt=""></picture>
+                        </div>
+                        <div class="organizers-content__box">
+                            <picture>
+                                <source srcset="assets/images/organizers-5-mobail.svg" media="(max-width: 500px)">
+                                <img src="assets/images/organizers-5.svg" alt=""></picture>
+                        </div>
+                        <div class="organizers-content__box">
+                            <picture>
+                                <source srcset="assets/images/organizers-6-mobail.svg" media="(max-width: 500px)">
+                                <img src="assets/images/organizers-6.svg" alt=""></picture>
+                        </div>
                     </div>
                 </div>
             </section>
