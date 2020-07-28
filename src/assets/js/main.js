@@ -19,13 +19,18 @@ window.addEventListener('load', function() {
 
     function clickSubmainItem() {
         let buffText;
+        if (this.closest('.part-filter-content__item') !== null)
+            if (this.closest('.part-filter-content__item').className === 'part-filter-content__item') this.closest('.part-filter-content__item').className += ' first-click';
+        if (this.closest('.program .filter-content__item') !== null)
+            if (this.closest('.filter-content__item').className === 'filter-content__item') this.closest('.filter-content__item').className += ' first-click';
+
         if (this.closest('.part-filter-content__item') !== null) {
             buffText = this.closest('.part-filter-content__item').querySelector('.part-filter-content__main').textContent;
-            this.closest('.part-filter-content__item').querySelector('input').value = this.textContent;
+            this.closest('.part-filter-content__item').querySelector('input').value = this.id;
             this.closest('.part-filter-content__item').querySelector('.part-filter-content__main').textContent = this.textContent;
         } else {
             buffText = this.closest('.program .filter-content__item').querySelector('.program .filter-content__main').textContent;
-            this.closest('.program .filter-content__item').querySelector('input').value = this.textContent;
+            this.closest('.program .filter-content__item').querySelector('input').value = this.id;
             this.closest('.program .filter-content__item').querySelector('.program .filter-content__main').textContent = this.textContent;
         }
         this.textContent = buffText;
@@ -48,6 +53,6 @@ window.addEventListener('load', function() {
     document.querySelectorAll('.program .filter-content__submain li').forEach(function(item) {
         item.addEventListener('click', clickSubmainItem);
     });
-    document.querySelector('.header-menu__burger').addEventListener('click', clickBurger);
+    if (document.querySelector('.header-menu__burger') !== null) document.querySelector('.header-menu__burger').addEventListener('click', clickBurger);
 });
 window.addEventListener('resize', checkWidth);
