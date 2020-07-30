@@ -12,18 +12,28 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <div class="header__title title">Наследники традиций</div>
-            <p class="header__subtitle">Всероссийский детский фестиваль народной культуры</p>
+            <div class="header-inner">
+                <div class="header__title">Наследники традиций</div>
+                <p class="header__subtitle">Всероссийский детский фестиваль народной культуры</p>
+            </div>
             <nav class="header-menu">
-                <a href="#" class="header-menu__item">О проекте</a>
-                <a href="#" class="header-menu__item header-menu__item_active">Участники</a>
-                <a href="#" class="header-menu__item">Программа</a>
-                <a href="#" class="header-menu__item">Выставка</a>
-                <a href="#" class="header-menu__item">Эксперты</a>
-                <a href="#" class="header-menu__item">Трансляции</a>
-                <a href="#" class="header-menu__item">Новости</a>
-                <a href="#" class="header-menu__item">Итоги</a>
-                <a href="#" class="header-menu__item">Организаторы</a>
+                <div class="header-menu__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-menu__desktop">
+                    <a href="#" class="header-menu__item">О проекте</a>
+                    <a href="#" class="header-menu__item header-menu__item_active">Участники</a>
+                    <a href="#" class="header-menu__item">Программа</a>
+                    <a href="#" class="header-menu__item">Выставка</a>
+                    <a href="#" class="header-menu__item">Эксперты</a>
+                    <a href="#" class="header-menu__item">Трансляции</a>
+                    <a href="#" class="header-menu__item">Новости</a>
+                    <a href="#" class="header-menu__item">Итоги</a>
+                    <a href="#" class="header-menu__item">Организаторы</a>
+                </div>
             </nav>
             <a href="#" class="header__log">Войти в кабинет</a>
         </div>
@@ -34,7 +44,7 @@
                 <div class="container">
                     <div class="part-filter__title">Участники</div>
                     <div class="part-filter-content">
-                        <form action="" method="get">
+                        <form action="" method="get" id="test">
                             <div class="part-filter-content__input">
                                 <input type="text" placeholder="Найти…">
                                 <div class="part-filter-content__search"><img src="assets/images/search.svg" alt=""></div>

@@ -1,11 +1,18 @@
 .experts {
     .filter {
         padding-top: 75px;
+        @media(max-width: 500px) {
+            padding-top: 135px;
+        }
         &-block {
             margin: 57px 0 0;
             display: flex;
             justify-content: space-between;
             max-width: 1060px;
+            @media(max-width: 1350px) {
+                flex-wrap: wrap;
+                margin: 42px 0 0;
+            }
             &__item {
                 flex: 0 1 250px;
                 background-color: #39a2a7;
@@ -20,6 +27,12 @@
                 padding-left: 25px;
                 transition: .3s;
                 cursor: pointer;
+                @media(max-width: 1350px) {
+                    margin: 15px 10px 0;
+                }
+                @media(max-width: 500px) {
+                    flex: 0 1 100%;
+                }
                 &_active,
                 &:hover {
                     background-color: #ffffff;
@@ -30,6 +43,9 @@
     }
     .organizers {
         padding: 102px 0 0;
+        @media(max-width: 768px) {
+            padding: 50px 0 0;
+        }
         &__title {
             color: #000000;
             font-size: 28px;
@@ -46,17 +62,33 @@
             flex-wrap: wrap;
             max-width: 1046px;
             margin: -50px 0;
+            @media(max-width: 1280px) {
+                justify-content: space-around;
+            }
             &__box {
                 padding: 50px 0;
+                @media(max-width: 1280px) {
+                    margin: 0 10px;
+                }
+                @media(max-width: 500px) {
+                    flex: 0 1 100%;
+                    padding: 30px 0;
+                }
                 &:last-child {
                     flex-grow: 1;
                     margin-left: 85px;
+                    @media(max-width: 1280px) {
+                        flex-grow: 0;
+                        margin-left: 0;
+                    }
                 }
             }
             &__img {
                 max-width: 105px;
                 img {
+                    border-radius: 50%;
                     max-width: 100%;
+                    height: 105px;
                 }
             }
             &__name {
@@ -81,6 +113,9 @@
     }
     .jury {
         padding: 117px 0 0;
+        @media(max-width: 768px) {
+            padding: 50px 0 0;
+        }
         &__title {
             color: #000000;
             font-size: 28px;
@@ -97,17 +132,33 @@
             flex-wrap: wrap;
             max-width: 1046px;
             margin: -50px 0;
+            @media(max-width: 1280px) {
+                justify-content: space-around;
+            }
             &__box {
                 padding: 50px 0;
+                @media(max-width: 1280px) {
+                    margin: 0 10px;
+                }
+                @media(max-width: 500px) {
+                    flex: 0 1 100%;
+                    padding: 30px 0;
+                }
                 &:last-child {
                     flex-grow: 1;
                     margin-left: 85px;
+                    @media(max-width: 1280px) {
+                        flex-grow: 0;
+                        margin-left: 0;
+                    }
                 }
             }
             &__img {
                 max-width: 105px;
                 img {
+                    border-radius: 50%;
                     max-width: 100%;
+                    height: 105px;
                 }
             }
             &__name {
@@ -132,6 +183,9 @@
     }
     .leading {
         padding: 117px 0 0;
+        @media(max-width: 768px) {
+            padding: 50px 0 0;
+        }
         &__title {
             color: #000000;
             font-size: 28px;
@@ -148,17 +202,34 @@
             flex-wrap: wrap;
             max-width: 1046px;
             margin: -50px 0;
+            @media(max-width: 1280px) {
+                justify-content: space-around;
+            }
             &__box {
                 padding: 50px 0;
+                @media(max-width: 1280px) {
+                    margin: 0 10px;
+                }
+                @media(max-width: 500px) {
+                    flex: 0 1 100%;
+                    padding: 30px 0;
+                }
                 &:last-child {
                     flex-grow: 1;
                     margin-left: 85px;
+                    @media(max-width: 1280px) {
+                        flex-grow: 0;
+                        margin-left: 0;
+                    }
                 }
             }
             &__img {
                 max-width: 105px;
+                border-radius: 50%;
                 img {
+                    border-radius: 50%;
                     max-width: 100%;
+                    height: 105px;
                 }
             }
             &__name {
@@ -183,6 +254,9 @@
     }
     .speaker {
         padding: 117px 0 250px;
+        @media(max-width: 768px) {
+            padding: 50px 0 100px;
+        }
         &__title {
             color: #000000;
             font-size: 28px;
@@ -199,17 +273,33 @@
             flex-wrap: wrap;
             max-width: 1046px;
             margin: -50px 0;
+            @media(max-width: 1280px) {
+                justify-content: space-around;
+            }
             &__box {
                 padding: 50px 0;
+                @media(max-width: 1280px) {
+                    margin: 0 10px;
+                }
+                @media(max-width: 500px) {
+                    flex: 0 1 100%;
+                    padding: 30px 0;
+                }
                 &:last-child {
                     flex-grow: 1;
                     margin-left: 85px;
+                    @media(max-width: 1280px) {
+                        flex-grow: 0;
+                        margin-left: 0;
+                    }
                 }
             }
             &__img {
                 max-width: 105px;
                 img {
+                    border-radius: 50%;
                     max-width: 100%;
+                    height: 105px;
                 }
             }
             &__name {

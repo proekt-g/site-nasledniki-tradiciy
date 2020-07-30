@@ -24,6 +24,7 @@
     display: flex;
     padding: 60px 0 150px;
     box-shadow: 20px -35px 45px rgba(0, 0, 0, 0.14);
+    z-index: 99;
     @media(max-width: 1080px) {
         max-width: 100%;
         background: none;

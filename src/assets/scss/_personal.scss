@@ -1,8 +1,22 @@
 .pers-info {
     padding: 77px 0 0;
+    @media(max-width: 768px) {
+        padding: 120px 0 0;
+    }
     &-top {
         display: flex;
+        @media(max-width: 1350px) {
+            justify-content: space-between;
+        }
+        @media(max-width: 768px) {
+            flex-wrap: wrap;
+        }
         &-left {
+            @media(max-width: 768px) {
+                flex: 0 1 100%;
+                order: 1;
+                margin-top: 40px;
+            }
             &__subtitle {
                 color: #b10302;
                 font-size: 18px;
@@ -23,6 +37,17 @@
             padding: 0 54px;
             margin: -9px 0 0 393px;
             transition: .3s;
+            @media(max-width: 1350px) {
+                margin: 0;
+            }
+            @media(max-width: 768px) {
+                flex: 0 1 100%;
+                text-align: center;
+                order: 0;
+            }
+            @media(max-width: 500px) {
+                text-align: left;
+            }
             &:hover {
                 border-radius: 0;
             }
@@ -33,7 +58,20 @@
         max-width: 706px;
         justify-content: space-between;
         margin-top: 30px;
-        &__column {}
+        @media(max-width: 500px) {
+            flex-wrap: wrap;
+            margin-left: 50px;
+        }
+        &__column {
+            @media(max-width: 500px) {
+                margin-top: 15px;
+            }
+            &:first-child {
+                @media(max-width: 500px) {
+                    margin-top: 0;
+                }
+            }
+        }
         &__item {
             color: #e4bd89;
             font-size: 18px;
@@ -51,17 +89,27 @@
     &-inner {
         display: flex;
         justify-content: space-between;
+        @media(max-width: 768px) {
+            flex-wrap: wrap;
+        }
     }
     iframe {
         border-radius: 10px;
         flex: 0 1 706px;
+        @media(max-width: 768px) {
+            flex: 0 1 100%;
+        }
     }
     &-text {
-        margin-top: 10px;
+        margin: 10px 0 0 20px;
         flex: 0 1 621px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media(max-width: 768px) {
+            flex: 0 1 100%;
+            margin-left: 0;
+        }
         &__p {
             color: #000000;
             font-size: 16px;
@@ -77,6 +125,9 @@
 
 .pers-team {
     margin: 70px 0;
+    @media(max-width: 768px) {
+        margin: 35px 0;
+    }
     &__title {
         color: #000000;
         font-size: 28px;
@@ -89,17 +140,32 @@
         max-width: 1025px;
         justify-content: space-between;
         margin: -20px 0;
+        @media(max-width: 1280px) {
+            justify-content: space-around;
+        }
         &__box {
             padding: 20px 0;
+            @media(max-width: 1350px) {
+                margin: 0 10px;
+            }
+            @media(max-width: 500px) {
+                flex: 0 1 100%;
+            }
             &:last-child {
                 flex-grow: 1;
                 margin-left: 70px;
+                @media(max-width: 1280px) {
+                    flex-grow: 0;
+                    margin-left: 10px;
+                }
             }
         }
         &__img {
             max-width: 105px;
             img {
                 max-width: 100%;
+                border-radius: 50%;
+                height: 105px;
             }
         }
         &__name {
@@ -123,24 +189,48 @@
         font-size: 28px;
         font-weight: 700;
         margin: 0 0 53px;
+        @media(max-width: 768px) {
+            margin-bottom: 25px;
+        }
     }
     &-block {
         display: flex;
         justify-content: space-between;
         max-width: 1226px;
+        @media(max-width: 1280px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: -20px 0px;
+        }
+        @media(max-width: 768px) {
+            margin: -10px 0;
+        }
         iframe {
             border-radius: 10px;
+            margin: 0 5px;
+            @media(max-width: 1280px) {
+                margin: 20px 0;
+            }
+            @media(max-width: 768px) {
+                margin: 10px 0;
+            }
         }
     }
 }
 
 .pers-photo {
     margin: 73px 0 250px;
+    @media(max-width: 768px) {
+        margin: 60px 0 100px;
+    }
     &__title {
         color: #000000;
         font-size: 28px;
         font-weight: 700;
         margin: 0 0 53px;
+        @media(max-width: 768px) {
+            margin-bottom: 25px;
+        }
     }
     &-block {
         display: flex;
@@ -148,9 +238,15 @@
         max-width: 1226px;
         flex-wrap: wrap;
         margin: -8px 0;
+        @media(max-width: 1350px) {
+            justify-content: space-around;
+        }
         &__img {
             flex: 0 1 398px;
             margin: 8px 0;
+            @media(max-width: 1350px) {
+                margin: 8px 7px;
+            }
             img {
                 max-width: 100%;
                 border-radius: 10px;

@@ -1,0 +1,20 @@
+.organizer {
+    .content {
+        padding: 90px 0;
+        &__title {
+            margin-bottom: 75px;
+        }
+        &-block {
+            margin: -20px 0;
+            max-width: 1352px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            &__img {
+                display: block;
+                margin: 20px 10px;
+                align-self: center;
+            }
+        }
+    }
+}

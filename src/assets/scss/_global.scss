@@ -27,6 +27,10 @@ main {
     font-weight: 700;
     padding-left: 50px;
     position: relative;
+    z-index: -1;
+    @media(max-width: 500px) {
+        font-size: 26px;
+    }
     &::after {
         content: url(../images/organizers-romb.svg);
         position: absolute;
