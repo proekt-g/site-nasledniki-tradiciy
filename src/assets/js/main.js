@@ -52,6 +52,16 @@ window.addEventListener('load', function() {
         this.closest('.header-menu').classList.toggle('menu_state_open');
         this.closest('.header-menu').querySelector('.header-menu__desktop').classList.toggle('open');
     }
+
+    function clickLinkNews() {
+        let hiddenElement = this.closest('.block-inner').querySelector('.block-text-hidden');
+        $(hiddenElement).toggle(100);
+        if (this.textContent === 'Развернуть полностью') this.textContent = 'свернуть';
+        else this.textContent = 'Развернуть полностью';
+    }
+    document.querySelectorAll('.block__link').forEach(function(item) {
+        item.addEventListener('click', clickLinkNews);
+    });
     document.querySelectorAll('.program .filter-content__main').forEach(function(item) {
         item.addEventListener('click', clickFilter);
     });
